@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+/* Global */
+* {
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+body .g-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff; 
+    color: #000000; 
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+/* Nav */
+.g-header {
+    background-color: #faf8f8;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgb(30, 161, 191); 
+}
+
+.g-nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.g-nav-links li {
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(30, 161, 191);
+    border-radius: 6px;
+    cursor: pointer; 
+} 
+
+.g-nav-links li:hover {
+    background-color: rgb(30, 161, 191);
+    color: #000;
+}
+
+/* Main */
+#g-main {
+    padding: 2rem;
+    display: flex;
+    flex-grow: 1; 
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#g-main h1 {
+    border: 1px solid rgb(30, 161, 191);
+    border-radius: 6px;
+    padding: 0.5rem;
+    text-align: center;
+}
+/* Section*/
+section {
+    border: 1px solid rgb(30, 161, 191);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* images */
+
+.container-project2,
+.container-project3,
+.container-insult,
+.container-bottle,
+.container-abbreviation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+figure {
+    border: 1px solid rgb(30, 161, 191);
+    border-radius: 6px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+figcaption {
+    color: rgb(30, 161, 191);
+    font-size: 0.9rem;
+}
+
+/* Footer */
+#g-footer {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid rgb(30, 161, 191);
+}
+
+/* Links */
+a {
+    color: rgb(30, 161, 191);
+}
+
+a:hover {
+    color: #fff;
+}
+
+@media (max-width: 500px) {
+
+    .g-nav-links {
+        flex-direction: column;
+    }
+
+    .container-project2, .container-project3, .container-insult, .container-bottle, .container-abbreviation {
+        flex-direction: column;
+        align-items: center;
+    }
+}
